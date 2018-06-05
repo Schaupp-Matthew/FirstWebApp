@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>FirstWebApp</h1>
+            
+            <a href="/FirstWebApp/DadJokesServlet">Dad Jokes Servlet</a>
+        </div>
+        <div>
+            <h2>Count to 10 in different languages</h2>
+            <p>Please select a language below to see how to count to 10:</p>
+            <form method="get" action="http://localhost:8084/FirstWebApp/TranslateServlet">
+                <fieldset>
+                     <legend>Language Options:</legend>
+                     <br>
+                    <input type="radio" value="spanish" name="language">Spanish<br>
+                    <input type="radio" value="german" name="language">German<br>
+                    <input type="radio" value="french" name="language">French<br><br>
+                    <input type="submit" name="submit" value="Submit"> 
+                    <input type="hidden" name="action" value="translation">
+                </fieldset>
+            </form>
+        </div>
+        
+    </body>
+</html>
